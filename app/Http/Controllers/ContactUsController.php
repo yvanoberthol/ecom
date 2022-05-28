@@ -23,7 +23,6 @@ class ContactUsController extends Controller
      */
     public function index()
     {
-        CoreComponentRepository::initializeCache();
         $contacts = ContactUs::orderBy('created_at', 'desc')->get();
         return view('backend.contactUs.index', compact('contacts'));
     }

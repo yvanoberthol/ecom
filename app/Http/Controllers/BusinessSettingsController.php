@@ -12,30 +12,25 @@ class BusinessSettingsController extends Controller
 {
     public function general_setting(Request $request)
     {
-        CoreComponentRepository::initializeCache();
     	return view('backend.setup_configurations.general_settings');
     }
 
     public function activation(Request $request)
     {
-        CoreComponentRepository::initializeCache();
     	return view('backend.setup_configurations.activation');
     }
 
     public function smtp_settings(Request $request)
     {
-        CoreComponentRepository::initializeCache();
         return view('backend.setup_configurations.smtp_settings');
     }
 
     public function google_recaptcha(Request $request)
     {
-        CoreComponentRepository::initializeCache();
         return view('backend.setup_configurations.google_configuration.google_recaptcha');
     }
     
     public function google_map(Request $request) {
-        CoreComponentRepository::initializeCache();
         return view('backend.setup_configurations.google_configuration.google_map');
     }
 

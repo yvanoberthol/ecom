@@ -19651,7 +19651,7 @@ namespace MehediIitdu\CoreComponentRepository {
          */
         public static function instantiateShopRepository()
         {
-            return CoreComponentRepository::instantiateShopRepository();
+           // return CoreComponentRepository::instantiateShopRepository();
         }
 
         /**
@@ -19661,7 +19661,7 @@ namespace MehediIitdu\CoreComponentRepository {
          */
         public static function initializeCache()
         {
-            return CoreComponentRepository::initializeCache();
+            //return CoreComponentRepository::initializeCache();
         }
 
     }

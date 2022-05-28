@@ -20,7 +20,6 @@ class AttributeController extends Controller
      */
     public function index()
     {
-        CoreComponentRepository::initializeCache();
         $attributes = Attribute::orderBy('created_at', 'desc')->get();
         return view('backend.product.attribute.index', compact('attributes'));
     }
